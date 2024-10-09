@@ -14,6 +14,12 @@ public class ProjectConfig {
         veh.setName("Audi 0");
         return  veh;
     }
+    @Bean
+    Vehicle vehicle1(){
+        var veh = new Vehicle();
+        veh.setName("My Audi");
+        return veh;
+    }
 
     @Bean
     String hello(){
