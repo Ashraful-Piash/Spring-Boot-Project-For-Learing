@@ -1,6 +1,7 @@
 package com.example.demo.main;
 
 
+import com.example.demo.ShoppingCart;
 import com.example.demo.beans.Vehicle2;
 import com.example.demo.config.ProjectConfig;
 import com.example.demo.config.ProjectConfig2;
@@ -14,6 +15,9 @@ public class Example2 {
         Vehicle2 vehicle2 = context.getBean(Vehicle2.class);
         System.out.println("Name is " + vehicle2.getName());
         vehicle2.printHello();
+
+        ShoppingCart cart = context.getBean(ShoppingCart.class);
+        cart.checkOut();
 
     }
 }
